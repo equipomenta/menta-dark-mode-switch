@@ -1,0 +1,73 @@
+$global = 'Roboto', sans-serif
+
+$blue = #121f3d
+$blue2 = #03091e
+$green = #00ff7f
+
+body
+    color $blue
+    font-family $global
+    font-size 15.5px
+    font-weight 400
+    padding-top 3.5rem
+    text-rendering optimizeLegibility
+    -webkit-font-smoothing antialiased
+
+.bg-navbar
+    background-color: $blue
+
+.navbar
+    box-shadow 0 2px 4px 0 rgba(3, 9, 30, 0.5)
+
+.custom-switch
+    padding-left 4rem
+
+.custom-control-label
+    color $green
+    font-weight 500
+
+.custom-control-input
+    cursor pointer
+
+.custom-control-label
+    cursor pointer
+
+.custom-control-label::before
+    border transparent
+
+.custom-control-input:not(:disabled):active~.custom-control-label::before
+    background-color white
+    border-color white
+
+.custom-switch .custom-control-label::after
+    background-color $green
+
+.custom-control-input:focus:not(:checked)~.custom-control-label::before
+    border-color transparent
+
+.custom-control-input:checked~.custom-control-label::before
+    background-color $blue2
+    border-color transparent
+    color: white
+
+.custom-control-input:focus~.custom-control-label::before
+    box-shadow none
+
+//Header
+.HeaderHome
+    background-color #F7FCEF
+    border-radius 0rem
+    font-family $global
+    .lead
+        color $blue
+    h1
+        color $green
+        font-weight bold
+
+[data-theme="dark"] .HeaderHome
+    background-color $blue
+    border-radius 0rem
+    .lead
+        color white
+    h1
+        color $green

@@ -1,0 +1,71 @@
+body {
+  color: #121f3d;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15.5px;
+  font-weight: 400;
+  padding-top: 3.5rem;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+.bg-navbar {
+  background-color: #121f3d;
+}
+.navbar {
+  box-shadow: 0 2px 4px 0 rgba(3,9,30,0.5);
+}
+.custom-switch {
+  padding-left: 4rem;
+}
+.custom-control-label {
+  color: #00ff7f;
+  font-weight: 500;
+}
+.custom-control-input {
+  cursor: pointer;
+}
+.custom-control-label {
+  cursor: pointer;
+}
+.custom-control-label::before {
+  border: transparent;
+}
+.custom-control-input:not(:disabled):active~.custom-control-label::before {
+  background-color: #fff;
+  border-color: #fff;
+}
+.custom-switch .custom-control-label::after {
+  background-color: #00ff7f;
+}
+.custom-control-input:focus:not(:checked)~.custom-control-label::before {
+  border-color: transparent;
+}
+.custom-control-input:checked~.custom-control-label::before {
+  background-color: #03091e;
+  border-color: transparent;
+  color: #fff;
+}
+.custom-control-input:focus~.custom-control-label::before {
+  box-shadow: none;
+}
+.HeaderHome {
+  background-color: #f7fcef;
+  border-radius: 0rem;
+  font-family: 'Roboto', sans-serif;
+}
+.HeaderHome .lead {
+  color: #121f3d;
+}
+.HeaderHome h1 {
+  color: #00ff7f;
+  font-weight: bold;
+}
+[data-theme="dark"] .HeaderHome {
+  background-color: #121f3d;
+  border-radius: 0rem;
+}
+[data-theme="dark"] .HeaderHome .lead {
+  color: #fff;
+}
+[data-theme="dark"] .HeaderHome h1 {
+  color: #00ff7f;
+}
